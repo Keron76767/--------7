@@ -1,0 +1,9 @@
+﻿<script>
+    const daysOfWeek = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+    const currentDate = new Date();
+    const currentDayOfWeek = daysOfWeek[currentDate.getDay()];
+    const prevDay = daysOfWeek[(currentDate.getDay() + 6) % 7];
+    const nextDay = daysOfWeek[(currentDate.getDay() + 1) % 7];
+
+    alert(`Предыдущий день: ${prevDay}\nТекущий день: ${currentDayOfWeek}\nСледующий день: ${nextDay}`);
+</script>

@@ -1,0 +1,14 @@
+﻿<script>
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    const fridays13 = [];
+
+    for (let month = 0; month < 12; month++) {
+        const date = new Date(currentYear, month, 13);
+        if (date.getDay() === 5) { // 5 corresponds to Friday
+            fridays13.push(date.toDateString());
+        }
+    }
+
+    alert(`Пятницы 13-е в текущем году:\n${fridays13.join('\n')}`);
+</script>

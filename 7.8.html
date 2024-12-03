@@ -1,0 +1,11 @@
+﻿<script>
+    const currentYear = new Date().getFullYear();
+    const holidays = [
+        new Date(currentYear, 0, 1),  // Новый год
+        new Date(currentYear, 4, 9),  // День Победы
+        new Date(currentYear, 5, 12), // День России
+    ];
+
+    const holidayNames = holidays.map(holiday => holiday.toDateString());
+    alert(`Государственные праздники в текущем году:\n${holidayNames.join('\n')}`);
+</script>

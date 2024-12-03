@@ -1,0 +1,7 @@
+﻿<script>
+const dateInput = prompt("Введите дату (гггг-мм-дд):");
+const date = new Date(dateInput);
+const daysOfWeek = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+const dayOfWeek = daysOfWeek[date.getDay()];
+alert(`День недели: ${dayOfWeek}`);
+</script>
